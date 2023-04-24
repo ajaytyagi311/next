@@ -29,8 +29,9 @@ export default function Hello(){
             
           const res = await axios.post('/api/postData', {_url});
           console.log(res.data);
+          alert('successfully saved');
         } catch (error) {
-          console.error(error);
+          alert(error);
         }
       };
       
